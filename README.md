@@ -1,7 +1,5 @@
 # Impact of COVID-19 on politics
 
-# DSE 203
-
 ### Team Members: Akash Shah, Aparna Gupta , Daniel Roten , Venu Mamidila
 
 
