@@ -46,16 +46,16 @@ Modified to include topics, replies and quotes**
     are talking about the same topic , while ​ **#WashYourHands and #SocialDistance**
     can be another topic.
 3. While building the graph we take care of the following:
-    a. Put in only necessary information and properties
-    b. Pre process text using the ​ **text2emotion​** package to extract emotions
+    - Put in only necessary information and properties
+    - Pre process text using the ​ **text2emotion​** package to extract emotions
        related to the tweets.
-    c. Make sure that ​ **replies , retweets and quotes​** are captured and treated in a
+    - Make sure that ​ **replies , retweets and quotes​** are captured and treated in a
        similar fashion, since we consider each of these to be a form of activity. Each
        of these should form an edge.
-    d. If a tweet is a retweet, we make sure to build an edge to the relevant topic.
+    - If a tweet is a retweet, we make sure to build an edge to the relevant topic.
        This makes it easier to analyze the activity around a particular topic over
        time, irrespective of it being a retweet or an actual tweet.
-    e. Carefully capture the ​ **created_at​** attribute of a tweet, since we want to
+    - Carefully capture the ​ **created_at​** attribute of a tweet, since we want to
        effectively query this attribute.
 4. We define a reasonable enough time interval - say 1 day in the twitter world. For each time interval we calculate the number of edges over time. We pick the topics
     that are very highly talked about, i.e
